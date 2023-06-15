@@ -26,11 +26,11 @@ const getUser = (id?: number): User | null => {
   return user;
 };
 
-const createUser = (payload: User): User | string => {
-  const user = users.find(() => payload.id) || null;
+const createUser = (payload: User): User[] | string => {
+  const user = users.find(user => user.id == payload.id) || null;
   if (user) return 'User Exists'
-  users.push(payload);
-  return payload;
+  users.push(payload);  
+  return users;
 };
 
 export const UsersRepo = {
