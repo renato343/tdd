@@ -21,7 +21,7 @@ const users: User[] = [
 
 const getUsers = (): User[] => users;
 
-const getUser = (id?: number): User | null => {
+const getUser = (id: number): User | null => {
   const user = users.find((user) => user.id === id) || null
   return user;
 };
