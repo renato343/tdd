@@ -10,19 +10,3 @@ test("should return pong message", async () => {
   // CleanUp
   
 });
-
-test('should return empty array', ()=>{
-  // Arrange
-  // const controller = new UserController();
-  // const spy = jest.spyOn(UsersRepo, 'getUsers').mockReturnValue([]);
-
-  // //Act
-  // const users = controller.getUsers();
-
-  // //Assert 
-  // expect(users).toEqual([]);
-  // expect(spy).toBeCalledTimes(1);
-
-  // //CleanUp
-  // spy.mockReset();
-})
